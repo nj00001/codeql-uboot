@@ -24,4 +24,4 @@ class Config extends TaintTracking::Configuration {
 
 from DataFlow::PathNode source,DataFlow::PathNode sink,Config cfg
 where  cfg.hasFlowPath(source, sink)
-select source,sink
+select sink,source,sink
